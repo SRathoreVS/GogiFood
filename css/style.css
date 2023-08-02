@@ -1,0 +1,103 @@
+/* 
+
+---01 TYPOGRAPHY SYSTEM 
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weight :- 
+  default : 400
+
+- Line Height :- 
+ Default :- 1
+
+
+-- 02 COLORS 
+
+- Primary :  #e67e22
+
+- Tints : 
+- Shades : 
+- Greys : #555 ,#333
+- Accents : 
+
+-- 03 SHADOWS
+
+-- 04 BORDER RADIUS
+
+-- 05 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* to be compatible with all the browser */
+
+html {
+  /* font-size: 10px; */
+  /* 10px/16px(pre-def val) = 0.625 */
+  /* percentage of users browser font-size setting */
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.section-hero {
+  background-color: #fdf2e9;
+}
+/* .test 
+     
+When using PX , while decreasing the size of Webpage , the content 
+     keeps on staying on its definite size as 1000px(as defined) ,
+     therefore , we need to scroll left and right for the whole view of the content 
+   width: 1000px; 
+  background-color: red;
+   
+  An Additional space is created for the content to fit in ,
+  if there is no additional space , the  the <element> has to inherit the 
+  parent element width ,
+  for that we go for 
+  max-width prp.
+  
+  padding: 4rem;
+  max-width: 50rem;
+  color: white;
+  font-size: 2rem;
+
+     1rem = 16px
+     50rem = 50*16 = 800px */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  align-items: center;
+
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.hero-img {
+  width: 100%;
+}
+
+

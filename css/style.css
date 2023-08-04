@@ -1,110 +1,4 @@
-/* 
 
----01 TYPOGRAPHY SYSTEM 
-
-- FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Font weight :- 
-  default : 400
-  medium - 500
-  semi-bold : 600
-  bold : 700
-
-- Line Height :- 
- Default :- 1
-
-
--- 02 COLORS 
-
-- Primary :  #e67e22
-
-- Tints : 
-- Shades : 
-- Greys : #555 ,#333
-- Accents : 
-
--- 03 SHADOWS
-
--- 04 BORDER RADIUS
-    default - 9px
-
--- 05 WHITESPACE
-
-- SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
-
-/* to be compatible with all the browser */
-
-html {
-  /* font-size: 10px; */
-  /* 10px/16px(pre-def val) = 0.625 */
-  /* percentage of users browser font-size setting */
-  font-size: 62.5%;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Rubik" sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-/* ********************************************* */
-/* GENERAL COMPONENTS */
-/* ********************************************* */
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-.btn:link,
-.btn:visited {
-  color: #fff;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 0.9rem;
-  display: inline-block;
-  /* Put transition on orignal "state" */
-  transition: background-color 0.3s;
-  font-weight: 600;
-}
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-.btn--full:hover,
-.btn--full:active {
-  background-color: #b8651b;
-  color: #fff;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-
-  /* border: 3px solid white; */
-  /* trick to add border inside */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 /* ********************************************* */
 /* HEADER */
 /* ********************************************* */
@@ -115,7 +9,7 @@ body {
   background-color: #fdf2e9;
   /* because we want it to be sticky later  */
   height: 9.6rem;
-  padding: 0 4.8rem;
+  padding: 1.6rem 4.8rem;
 }
 .logo {
   height: 2.2rem;
@@ -227,4 +121,56 @@ When using PX , while decreasing the size of Webpage , the content
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+/* ********************************************* */
+/* HOW IT WORK SECTION*/
+/* ********************************************* */
+.section-how {
+  padding: 9.6rem 0;
+  
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img {
+  width: 35%;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  
+}
+.step-img-box::after {
+  width: 47%;
+  padding-bottom: 47%;
+  background-color: #f8d8bd;
+  z-index: -1;
+}
+.step-img-box::before{
+  width: 60%;
+  /* height: 60%; */
+  
+  /* 60% of Parents Width */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -1;
 }

@@ -203,4 +203,99 @@ When using PX , while decreasing the size of Webpage , the content
   background-color: #fdf2e9;
   z-index: -1;
 }
-
+/* ********************************************* */
+/* HOW IT WORK SECTION*/
+/* ********************************************* */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+/* SETTING TRANSITION PROPERTY FOR THE HOVERING (TRANSFORM)
+   PROPERTY TO ACT IN MANNERED WAY  */
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  border-radius: 1.2rem;
+  overflow: hidden ;
+  transition: all 0.4s;
+}
+/* SETTING HOVER ON AN IMG / NOT A LINK 
+   USING TRANSFORM PROPERTY TO MOVE THE ELEMENT UP/DOWN 
+   BY SETTING FEW VALUES IN (X/Y) DIRECTIONS*/
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
+}
+.meal-tittle {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+  
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-tag {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.tag--vegetarian {
+  background-color:#51cf66 ;
+}
+.tag--vegan {
+  background-color:#8ce99a ;
+}
+.tag--paleo {
+  background-color:#ffd43b ;
+}
+.meal-icon {
+  /* font-size: 2.4rem; */
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #cf711f;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}

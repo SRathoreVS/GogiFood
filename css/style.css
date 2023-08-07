@@ -1,4 +1,3 @@
-
 /* ********************************************* */
 /* HEADER */
 /* ********************************************* */
@@ -144,11 +143,9 @@ When using PX , while decreasing the size of Webpage , the content
   justify-content: space-around;
   filter: brightness(0);
   opacity: 50%;
-
 }
 .logos img {
   height: 3.2rem;
-
 }
 
 /* ********************************************* */
@@ -156,7 +153,6 @@ When using PX , while decreasing the size of Webpage , the content
 /* ********************************************* */
 .section-how {
   padding: 9.6rem 0;
-  
 }
 .step-number {
   font-size: 8.6rem;
@@ -184,9 +180,8 @@ When using PX , while decreasing the size of Webpage , the content
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  
 }
 .step-img-box::after {
   width: 47%;
@@ -194,10 +189,10 @@ When using PX , while decreasing the size of Webpage , the content
   background-color: #f8d8bd;
   z-index: -1;
 }
-.step-img-box::before{
+.step-img-box::before {
   width: 60%;
   /* height: 60%; */
-  
+
   /* 60% of Parents Width */
   padding-bottom: 60%;
   background-color: #fdf2e9;
@@ -218,9 +213,9 @@ When using PX , while decreasing the size of Webpage , the content
 /* SETTING TRANSITION PROPERTY FOR THE HOVERING (TRANSFORM)
    PROPERTY TO ACT IN MANNERED WAY  */
 .meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.2rem;
-  overflow: hidden ;
+  overflow: hidden;
   transition: all 0.4s;
 }
 /* SETTING HOVER ON AN IMG / NOT A LINK 
@@ -228,7 +223,7 @@ When using PX , while decreasing the size of Webpage , the content
    BY SETTING FEW VALUES IN (X/Y) DIRECTIONS*/
 .meal:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.06);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 .meal-tittle {
   font-size: 2rem;
@@ -241,7 +236,6 @@ When using PX , while decreasing the size of Webpage , the content
   flex-direction: column;
   list-style: none;
   gap: 2rem;
-  
 }
 .meal-attribute {
   font-size: 1.8rem;
@@ -264,13 +258,13 @@ When using PX , while decreasing the size of Webpage , the content
   font-weight: 600;
 }
 .tag--vegetarian {
-  background-color:#51cf66 ;
+  background-color: #51cf66;
 }
 .tag--vegan {
-  background-color:#8ce99a ;
+  background-color: #8ce99a;
 }
 .tag--paleo {
-  background-color:#ffd43b ;
+  background-color: #ffd43b;
 }
 .meal-icon {
   /* font-size: 2.4rem; */
@@ -298,4 +292,31 @@ When using PX , while decreasing the size of Webpage , the content
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+/* ********************************************* */
+/* TESTIMONIAL SECTION*/
+/* ********************************************* */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.testimonial {
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #777;
 }
